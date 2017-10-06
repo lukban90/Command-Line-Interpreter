@@ -5,7 +5,7 @@ OBJECTS = main.o listf.o calculator.o
 EXES = main listf calculator
 
 all: main.o
-	$(MAKE) $(EXES)
+	$(CC) -o main $(LDFLAGS) main.o
 
 calculator: calculator.o
 	$(CC) -o calculator $(LDFLAGS) calculator.o
